@@ -1,0 +1,75 @@
+$blue1: #69B2FC;
+$text_main: rgba(243, 243, 243, 0.87);
+.nav{
+    padding: 5px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+    border-radius: 25px;
+    z-index: 1;
+    width: 100%;
+    max-width: 700px;
+    background-color: #0012337e;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    border: 1px solid #0012337e;
+    transition: border-color 0.3s;
+    a{
+        color: $text_main;
+        transition: color 0.3s;
+        &:hover{
+            transition: color 0.2s;
+            color: $blue1;
+        }
+    }
+}
+
+select{
+    font-family: "Onest", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    background-color: transparent;
+    color: $text_main;
+    border: none;
+    font-size: 16px;
+    border-radius: 25px;
+    transition: border-color 0.3s;
+    border: 1px solid transparent;
+    transition: color 0.3s;
+    &:hover{
+        cursor: pointer;
+        color: $blue1;
+        transition: color 0.2s;
+    }
+    &:focus{
+        outline: none;
+    }
+    option{
+        background-color: #0012337e;
+        color: $text_main;
+        border: none;
+        border-radius: 25px;
+        transition: color 0.3s;
+    }
+}
+
+html:not([data-scroll='0']) .nav{
+    backdrop-filter: blur(5px);
+    transition: border-color 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.534);
+}
+@media (width<714px) {
+    .nav{
+        width: 95%;
+        select{
+            font-size: 14px;
+        }
+        a{
+            font-size: 14px;
+        }
+    }
+}

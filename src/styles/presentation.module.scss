@@ -1,0 +1,113 @@
+
+$blue1: #69B2FC;
+$blue2: #0353a4;
+$blue_dark: #001233;
+
+$text_main: rgba(243, 243, 243, 0.87);
+$text_secondary: rgb(172, 172, 172);
+.first-part{
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+    img{
+        width: 500px;
+    }
+    padding-bottom: 10rem;
+}
+.presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    h3{
+        font-size: 28px;
+        font-weight: 500;
+        margin: 0;
+        color: $text_secondary;
+    }
+    h1{
+        color: $text_main;
+        font-size: 85px;
+        margin: 0;
+        span{
+            color: $blue1;
+        }
+    }
+    h2{
+        text-wrap: pretty;
+        font-size: 45px;
+        color: $text_main;
+        font-weight: 500;
+        margin: 0;
+    }
+}
+.links, .links_bottom{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    a{
+        background-color: $text_main;
+        display: grid;
+        place-content: center;
+        border: 2px solid $text_main;
+        border-radius: 100px;
+        padding: 8px;
+        transition: 0.3s;
+        svg{
+            transition: 0.3s;
+            color: black;
+        }
+        &:hover{
+            transition: 0.2s;
+            background-color: black;
+            svg{
+                color: $text_main; 
+            }
+        }
+    }
+}
+.links_bottom{
+    display: none;
+}
+@media (width<1000px) {
+    .first-part{
+        img{
+            width: 350px;
+        }
+        gap: 0.5rem;
+    }
+    .presentation{
+        h3{
+            font-size: 20px;
+        }
+        h1{
+            font-size: 70px;
+        }
+        h2{
+            font-size: 30px;
+        }
+    }
+}
+@media (width<716px) {
+    .links{
+        display: none;
+    }
+    .links_bottom{
+        display: flex;
+    }
+    .first-part{
+        flex-direction: column;
+        gap: 2rem;
+        img{
+            width: 300px;
+        }
+    }
+    .presentation{
+        align-items: center;
+        text-align: center;
+    }
+}

@@ -1,0 +1,95 @@
+$blue_dark: #001233;
+
+.tech {
+    margin-top: 10rem;
+    position: relative; // Add this
+}
+
+.tech-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden; // This is crucial
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    padding-top: 0;
+    height: 120px; // Set a fixed height for the container
+
+    &::before,
+    &::after {
+        content: "";
+        height: 100%;
+        position: absolute;
+        width: 100px;
+        z-index: 2;
+    }
+    &::before {
+        left: 0;
+        background: linear-gradient(to right, $blue_dark, rgba(255, 255, 255, 0));
+    }
+    &::after {
+        right: 0;
+        background: linear-gradient(to left, $blue_dark, rgba(255, 255, 255, 0));
+    }
+}
+
+.carousel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    animation: scroll 25s linear infinite;
+    position: absolute; // Add this to take it out of normal flow
+    
+    .element {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-width: 95px;
+        margin: 0 15px;
+        font-size: 16px;
+        font-weight: 200;
+        align-items: center;
+        gap: 5px;
+        flex-shrink: 0;
+        
+        p {
+            margin: 0;
+        }
+        
+        img {
+            width: 55px;
+            height: 55px;
+        }
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-50%));
+    }
+}
+
+@media (width<600px) {
+    h1{
+       font-size: 40px; 
+       margin-bottom: 0;
+    }
+    .carousel {
+        animation: scroll 20s linear infinite;
+        gap: 0;
+        .element {
+            min-width: 80px;
+            img {
+                width: 45px;
+                height: 45px;
+            }
+        }
+    }
+    
+    
+}
