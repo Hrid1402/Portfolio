@@ -32,7 +32,7 @@ const STACK = {
     POSTGRES: {
       name: 'PostgreSQL',
       icon: icon_postgres,
-      color: 'rgba(75, 126, 192, 0.85)'
+      color: 'rgba(44, 103, 180, 0.85)'
     },
     PRISMA: {
       name: 'Prisma ORM',
@@ -42,7 +42,7 @@ const STACK = {
     SOCKETIO: {
       name: 'Socket.io',
       icon: icon_socketio,
-      color: 'rgba(158, 158, 158, 0.85)'
+      color: 'rgba(78, 78, 78, 0.85)'
     },
     TYPESCRIPT: {
       name: 'TypeScript',
@@ -107,7 +107,7 @@ function Projects() {
                         {
                           p.stack.map((element, i)=>{
                             return(
-                              <div className={styles['stack-element']} style={{backgroundColor: element.color}} key={i}><img src={element.icon}/>{element.name}</div>
+                              <div className={styles['stack-element']} style={{backgroundColor: element.color}} key={i}><img src={element.icon} alt={element.name}/>{element.name}</div>
                             )
                           })
                         }

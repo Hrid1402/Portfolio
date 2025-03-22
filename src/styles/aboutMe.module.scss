@@ -1,0 +1,28 @@
+.container{
+    margin-top: 1rem;
+    h1{
+        margin: 0;
+    }
+    p{
+        font-size: 21px;
+        text-wrap: pretty;
+        span{
+            font-weight: 500;
+            color: #69b2fc;
+        }
+    }
+}
+@media (width < 600px) {
+    h1 {
+        font-size: 40px;
+        margin-bottom: 0;
+    }
+}
+
+@media (width<370px) {
+    .container{
+        p{
+            font-size: 18px;
+        }
+    }
+}

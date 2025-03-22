@@ -1,0 +1,98 @@
+.container{
+    .subtitle{
+        font-size: 20px;
+        color: #69b2fc;
+        margin: 0;
+    }
+    h1{
+        margin: 0;
+    }
+    margin-top: 3rem;
+    padding-top: 2rem;
+    margin-bottom: 8rem;
+}
+.contacts-container{
+    padding-top: 45px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+.email{
+    min-width: 270px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    transition: 0.3s;
+    &:hover{
+        transition: 0.2s;
+        border: 2px solid rgba(255, 255, 255, 0.8);
+    }
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    padding: 10px 15px;
+    align-items: center;
+    gap: 20px;
+    justify-content: start;
+    .icon{
+        display: grid;
+        place-content: center;
+        height: 55px;
+        width: 55px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.301);
+        border: 1.8px solid rgba(255, 255, 255, 0.7);
+        svg{
+            transition: 0.3s;
+            height: 30px;
+            width: 30px;
+            color: rgba(255, 255, 255, 0.795)
+        }
+        transition: 0.3s;
+        &:hover{
+            background-color: rgba(255, 255, 255, 0.5);
+            transition: 0.2s;
+            svg{
+                transition: 0.2s;
+                height: 35px;
+                width: 35px;
+                color: rgba(255, 255, 255, 0.795);
+            }
+        }
+    }
+    .email-data{
+        h2, p{
+            margin: 0;
+        }
+        p{
+            font-weight: 300;
+        }
+        text-align: start;
+        flex-direction: column;
+        align-items: start;
+        justify-content: flex-start;
+    }
+}
+
+@media (width < 600px) {
+    h1 {
+        font-size: 40px;
+        margin-bottom: 0;
+    }
+}
+
+@media (width<320px) {
+    .email{
+        min-width: 0;
+        width: 90%;
+        gap: 10px;
+    }
+    .email-data{
+        p{
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 16px;
+            font-weight: 300;
+        }
+    }
+}

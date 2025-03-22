@@ -1,95 +1,80 @@
 $blue_dark: #001233;
 
 .tech {
-    margin-top: 10rem;
-    position: relative; // Add this
+    padding-top: 2rem;
+    margin-top: 5rem;
 }
 
 .tech-container {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    overflow: hidden; // This is crucial
-    position: relative;
+    justify-content: center;
+    gap: 2rem;
     width: 100%;
-    padding: 20px 0;
-    padding-top: 0;
-    height: 120px; // Set a fixed height for the container
-
-    &::before,
-    &::after {
-        content: "";
-        height: 100%;
-        position: absolute;
-        width: 100px;
-        z-index: 2;
-    }
-    &::before {
-        left: 0;
-        background: linear-gradient(to right, $blue_dark, rgba(255, 255, 255, 0));
-    }
-    &::after {
-        right: 0;
-        background: linear-gradient(to left, $blue_dark, rgba(255, 255, 255, 0));
-    }
-}
-
-.carousel {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 30px;
-    animation: scroll 25s linear infinite;
-    position: absolute; // Add this to take it out of normal flow
-    
-    .element {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        min-width: 95px;
-        margin: 0 15px;
-        font-size: 16px;
-        font-weight: 200;
-        align-items: center;
-        gap: 5px;
-        flex-shrink: 0;
-        
-        p {
-            margin: 0;
+    margin-top: 10px;
+    .tech-stack{
+        box-sizing: border-box;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        transition: 0.3s;
+        background-color: rgba(255, 255, 255, 0.041);
+        &:hover{
+            transition: 0.2s;
+            transform: translateY(-3px);
+            border: 2px solid rgba(255, 255, 255, 0.8);
         }
-        
-        img {
-            width: 55px;
-            height: 55px;
-        }
-    }
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(calc(-50%));
-    }
-}
-
-@media (width<600px) {
-    h1{
-       font-size: 40px; 
-       margin-bottom: 0;
-    }
-    .carousel {
-        animation: scroll 20s linear infinite;
-        gap: 0;
-        .element {
-            min-width: 80px;
-            img {
-                width: 45px;
-                height: 45px;
+        border-radius: 25px;
+        width: 35%;
+        .tech-stack-title{
+            padding: 25px 0px;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            align-items: center;
+            h2{
+                text-wrap: pretty;
+                font-weight: 600;
+                margin: 0;
+                text-align: start;
             }
         }
+        padding: 25px;
+        padding-top: 0;
+        .tech-stack-container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+            .tech-item{
+                box-shadow: rgba(255, 255, 255, 0.16) 0px 1px 4px;
+                background-color: rgb(13, 14, 14);
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 5px;
+                padding: 2px 15px;
+                border-radius: 10px;
+                img{
+                    height: 35px;
+                    width: 35px;
+                }
+            }
+            
+        }
     }
-    
-    
+}
+
+
+@media (width<790px) {
+    .tech-container {
+        flex-direction: column;
+    }
+    .tech-stack-title{
+        justify-content: center;
+    }
+    .tech-stack-container{
+        justify-content: center;
+    }
+    .tech-stack{
+        width: 100% !important;
+    }
 }

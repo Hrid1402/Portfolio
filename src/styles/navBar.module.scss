@@ -73,3 +73,15 @@ html:not([data-scroll='0']) .nav{
         }
     }
 }
+
+@media (width<330px) {
+    .nav{
+        width: 98%;
+        select{
+            font-size: 12px;
+        }
+        a{
+            font-size: 12px;
+        }
+    }
+}

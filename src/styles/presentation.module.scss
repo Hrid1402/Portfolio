@@ -16,7 +16,7 @@ $text_secondary: rgb(172, 172, 172);
     img{
         width: 500px;
     }
-    padding-bottom: 10rem;
+    padding-bottom: 4rem;
 }
 .presentation{
     display: flex;
@@ -109,5 +109,12 @@ $text_secondary: rgb(172, 172, 172);
     .presentation{
         align-items: center;
         text-align: center;
+    }
+}
+@media (width<320px) {
+    .first-part{
+        img{
+            width: 250px;
+        }
     }
 }

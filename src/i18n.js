@@ -6,6 +6,7 @@ const resources = {
     translation: {
         "Projects": "Projects",
         "About me": "About me",
+        "about" : "I'm passionate about building <span>intuitive</span> and <span>efficient</span> web experiences.\nI thrive on <span>solving problems</span> with a blend of <span>logic</span> and <span>creativity</span>, always pushing myself to <span>improve</span> and <span>learn</span> more.\nWhen I'm not coding, you'll find me listening to music, playing piano, or reading.\nGot an <span>exciting project</span> in mind? Let's connect and create something amazing together!",
         "Contact": "Contact",
         //presentation
         "hi": "Hi there",
@@ -24,13 +25,18 @@ const resources = {
         "movieSpot_title": "MovieSpot – Explore Movies & Series",
         "movieSpot_description": "MovieSpot is a movie and series explorer that lets you browse trending, popular, and top-rated titles. View detailed movie pages with cast information, trailers, and similar recommendations. Search by genre, filter top-rated content, and explore actor filmographies. The UI is sleek, responsive, and supports multiple languages.",
 
-        "Tech Stack": "Tech Stack"
+        "Tech Stack": "Tech Stack",
+
+        "contact_sub": "Got a project? Reach out!",
+        "download": "Download"
+
     }
   },
   es: {
     translation: {
         "Projects": "Proyectos",
         "About me": "Sobre mí",
+        "about": "Me apasiona construir experiencias web <span>intuitivas</span> y <span>eficientes</span>.\nDisfruto <span>resolviendo problemas</span> combinando <span>lógica</span> y <span>creatividad</span>, y siempre me esfuerzo por <span>mejorar</span> y <span>aprender</span> más.\nFuera del mundo del código, me encanta escuchar música, tocar el piano y leer.\n¿Tienes un <span>proyecto emocionante</span> en mente? ¡Conectemos y creemos algo increíble juntos!",
         "Contact": "Contacto",
         //presentation
         "hi": "Hola",
@@ -49,7 +55,12 @@ const resources = {
         "movieSpot_title": "MovieSpot – Explora Películas y Series",
         "movieSpot_description": "MovieSpot es un explorador de películas y series que te permite navegar por títulos en tendencia, populares y mejor valorados. Consulta páginas detalladas con información del reparto, tráilers y recomendaciones similares. Busca por género, filtra contenido mejor valorado y explora filmografías de actores. La interfaz es moderna, responsive y admite múltiples idiomas.",
 
-        "Tech Stack": "Tecnologías"
+        "Tech Stack": "Tecnologías",
+
+
+        "contact_sub": "¿Tienes un proyecto? ¡Contáctame!",
+        "download": "Descargar"
+
 
         
 

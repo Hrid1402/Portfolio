@@ -5,6 +5,10 @@ import Presentation from '../components/Presentation';
 import Projects from '../components/Projects';
 import TechStack from '../components/TechStack';
 import AboutMe from '../components/AboutMe';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer';
+import ParticlesComponent from '../components/ParticlesComponent';
+import '../styles/particles.scss';
 
 
 function Home() {
@@ -19,11 +23,14 @@ function Home() {
 
   return (
     <div className={styles.home}>
+      <ParticlesComponent id='particles'/>
       <NavBar/>
       <Presentation/>
       <AboutMe/>
       <Projects/>
       <TechStack/>
+      <Contact/>
+      <Footer/>
       
     </div>
   )

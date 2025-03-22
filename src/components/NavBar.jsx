@@ -12,9 +12,9 @@ function NavBar() {
   return (
     <nav className={styles.nav}>
       <a href='#projects'>{t('Projects')}</a>
-      <a href='#about-me'>{t('About me')}</a>
-      <a href='mailto:hridsiguenas@gmail.com'>{t('Contact')}</a>
-      <select onChange={(e) => changeLanguage(e.target.value)}>
+      <a href='#tech-stack'>{t('Tech Stack')}</a>
+      <a href='#contact'>{t('Contact')}</a>
+      <select onChange={(e) => changeLanguage(e.target.value)} aria-label="Change language" name="language">
         <option value="en">English</option>
         <option value="es">Spanish</option>
       </select>
