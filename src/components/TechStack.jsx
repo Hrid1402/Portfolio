@@ -14,7 +14,7 @@ import icon_vite from '../assets/icons/vitejs.svg'
 import icon_axios from '../assets/icons/axios.svg'
 import icon_passport from '../assets/icons/passport.svg'
 import { useTranslation } from 'react-i18next'
-import styles from '../styles/TechStack.module.scss'
+import styles from '../styles/techStack.module.scss'
 import { MonitorSmartphone, Server, Wrench   } from 'lucide-react';
 
 
