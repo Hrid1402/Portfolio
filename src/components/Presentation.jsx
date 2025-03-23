@@ -15,14 +15,14 @@ function Presentation() {
           <div className={styles.links}>
             <a href="https://github.com/Hrid1402" target="_blank" aria-label="Github"><Github size={'25px'} strokeWidth={1}/></a>
             <a href="https://www.linkedin.com/in/hrid-sigue%C3%B1as-846109261/" target="_blank" aria-label="LinkedIn"><Linkedin size={'25px'} strokeWidth={1}/></a>
-            <a href='Hrid_Sigueñas_CV.pdf' target='_blank' aria-label="CV"><FileUser size={'25px'} strokeWidth={1}/></a>
+            <a href={`CV_Hrid_${t("language")}.pdf`} target='_blank' aria-label="CV"><FileUser size={'25px'} strokeWidth={1}/></a>
           </div>
         </div>
         <img src={codingGraphic} alt=''/>
         <div className={styles.links_bottom}>
             <a href="https://github.com/Hrid1402" target="_blank" aria-label="Github"><Github size={'25px'} strokeWidth={1}/></a>
             <a href="https://www.linkedin.com/in/hrid-sigue%C3%B1as-846109261/" aria-label="LinkedIn" target="_blank"><Linkedin size={'25px'} strokeWidth={1}/></a>
-            <a href='Hrid_Sigueñas_CV.pdf' target='_blank' aria-label="CV"><FileUser size={'25px'} strokeWidth={1}/></a>
+            <a href={`CV_Hrid_${t("language")}.pdf`} target='_blank' aria-label="CV"><FileUser size={'25px'} strokeWidth={1}/></a>
           </div>
     </div>
   )

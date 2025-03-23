@@ -34,7 +34,7 @@ function Contact() {
             </div>
             
             <div className={styles.email}>
-                <a href='Hrid_Sigueñas_CV.pdf' target='_blank' aria-label="CV" className={styles.icon}>
+                <a href={`CV_Hrid_${t("language")}.pdf`} target='_blank' aria-label="CV" className={styles.icon}>
                     <FileUser />
                 </a>
 

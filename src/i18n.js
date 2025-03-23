@@ -4,6 +4,7 @@ import { initReactI18next } from 'react-i18next';
 const resources = {
   en: {
     translation: {
+        "language": "EN",
         "Projects": "Projects",
         "About me": "About me",
         "about" : "I'm passionate about building <span>intuitive</span> and <span>efficient</span> web experiences.\nI thrive on <span>solving problems</span> with a blend of <span>logic</span> and <span>creativity</span>, always pushing myself to <span>improve</span> and <span>learn</span> more.\nWhen I'm not coding, you'll find me listening to music, playing piano, or reading.\nGot an <span>exciting project</span> in mind? Let's connect and create something amazing together!",
@@ -34,6 +35,7 @@ const resources = {
   },
   es: {
     translation: {
+      "language": "ES",
         "Projects": "Proyectos",
         "About me": "Sobre mí",
         "about": "Me apasiona construir experiencias web <span>intuitivas</span> y <span>eficientes</span>.\nDisfruto <span>resolviendo problemas</span> combinando <span>lógica</span> y <span>creatividad</span>, y siempre me esfuerzo por <span>mejorar</span> y <span>aprender</span> más.\nFuera del mundo del código, me encanta escuchar música, tocar el piano y leer.\n¿Tienes un <span>proyecto emocionante</span> en mente? ¡Conectemos y creemos algo increíble juntos!",

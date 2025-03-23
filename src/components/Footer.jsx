@@ -2,7 +2,7 @@ import styles from '../styles/footer.module.scss'
 
 function Footer() {
   return (
-    <footer>
+    <footer className={styles.footer}>
         <p>Made by <a href='https://github.com/Hrid1402' target='_blank'>Hrid</a></p>
     </footer>
   )
